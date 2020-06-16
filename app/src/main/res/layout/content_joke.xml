@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageView
+        android:id="@+id/image_view_joke"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/chucknorris_logo_coloured_small" />
+
+    <TextView
+        android:id="@+id/text_view_joke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_view_joke"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/image_view_joke"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
+
+</RelativeLayout>
